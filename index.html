@@ -1,488 +1,303 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Shivam Srivastava</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <!--==== CSS Files ====-->
-    <link rel='stylesheet' href='css/skins/color-1.css'>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <!-- Style Switcher -->
-    <link rel='stylesheet' href='css/skins/color-1.css' class="alternate-style" title="color-1" disabled>
-    <link rel='stylesheet' href='css/skins/color-2.css' class="alternate-style" title="color-2" disabled>
-    <link rel='stylesheet' href='css/skins/color-3.css' class="alternate-style" title="color-3" disabled>
-    <link rel='stylesheet' href='css/skins/color-4.css' class="alternate-style" title="color-4" disabled>
-    <link rel='stylesheet' href='css/skins/color-5.css' class="alternate-style" title="color-5" disabled>
-    <link rel="stylesheet" href="css/style-switcher.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Senior Java Backend Engineer with expertise in Spring Boot, AWS, Microservices, and GenAI integrations." />
+  <title>Shivam Srivastava | Senior Java Backend Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f1a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #6366f1;
+      --accent-soft: rgba(99,102,241,0.15);
+    }
 
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #111827, var(--bg));
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 80px 24px;
+    }
+
+    h1 { font-size: 3rem; font-weight: 700; }
+    h2 { font-size: 2rem; margin-bottom: 24px; }
+    h3 { font-size: 1.25rem; margin-bottom: 12px; }
+
+    p { color: var(--muted); max-width: 720px; }
+
+    .hero {
+      text-align: center;
+      padding-top: 120px;
+    }
+
+    .hero h2 {
+      color: var(--accent);
+      margin-top: 12px;
+    }
+
+    .desc {
+     text-align: center;
+     color: var(--muted);
+     max-width: none;
+    }
+
+    .badges {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .badges span {
+      background: var(--accent-soft);
+      color: var(--accent);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    .skills-grid div,
+    .experience-item,
+    .project {
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 24px;
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .skills-grid div:hover,
+    .experience-item:hover,
+    .project:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,.4);
+    }
+
+    ul { padding-left: 18px; color: var(--muted); }
+    li { margin-bottom: 8px; }
+
+    .experience-item span {
+      display: block;
+      font-size: .9rem;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    .project { margin-top: 24px; }
+
+    #contact a { color: var(--accent); text-decoration: none; }
+
+    #contact a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.6rem; }
+      section { padding: 60px 20px; }
+    }
+  .resume-btn{display:inline-block;margin-top:32px;padding:12px 24px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#818cf8);color:#fff;text-decoration:none;font-weight:600;box-shadow:0 10px 30px rgba(99,102,241,.4)}
+.resume-btn:hover{transform:translateY(-2px);box-shadow:0 15px 40px rgba(99,102,241,.6)}
+
+.genai-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:32px}
+.genai-card{background:linear-gradient(180deg,rgba(99,102,241,.12),rgba(0,0,0,0));border:1px solid rgba(99,102,241,.35);border-radius:18px;padding:28px}
+.genai-card h3{color:var(--accent)}
+
+</style>
 </head>
-<body class="dark">
-    
-<!-- Main Container Start -->
+<body>
 
-<div class="main-container">
-    <!--  Aside Start -->
-    <div class="aside">
-        <div class="logo">
-            <a href="#"><span>S</span>rivast</a>
-        </div>
-        <div class="nav-toggler">
-            <span></span>
-        </div>
-        <ul class="nav">
-            <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
-            <li><a href="#about" ><i class="fa fa-user"></i>About</a></li>
-            <li><a href="#service" ><i class="fa fa-list"></i>Service</a></li>
-            <!-- <li><a href="#portfolio" ><i class="fa fa-briefcase"></i>Portfolio</a></li> -->
-            <li><a href="#contact" ><i class="fa fa-comments"></i>Contact</a></li>
-        </ul>
+  <section class="hero">
+    <h1>Shivam Srivastava</h1>
+    <h2>Senior Java Backend Engineer</h2>
+    <p class="desc">
+  I build scalable, high-performance backend systems using<br/>
+  <strong>Java</strong>, <strong>Spring Boot</strong>,
+  <strong>AWS</strong>, <strong>Microservices</strong>,
+  and <strong>Generative AI</strong>.
+</p>
+
+    <a href="shivam_srivastava.pdf" class="resume-btn" target="_blank">Download Resume</a>
+    <div class="badges">
+      <span>Java 8–17</span>
+      <span>Spring Boot</span>
+      <span>AWS</span>
+      <span>Microservices</span>
+      <span>GenAI</span>
     </div>
-    <!--  Aside Start -->
-    <!-- Main Content Start-->
-    <div class="main-content">
-        <!-- Home Section Start -->
-        <section class="home active section  " id="home"> 
-            <div class="container">
-                <div class="row">
-                    <div class="home-info padd-15">
-                        <h3 class="hello">Hello, my name is <span class="name">Shivam Srivastava</span></h3>
-                        <h3 class="my-profession">I' m a <span class="typing"></span></h3>
-                        <p>I'm a Java Developer with extensive experience for over 2 years. My expertise is to 
-                            create Business Applications, End to End Development included front-end and backend. 
-                        </p>
-                        <a href="https://drive.google.com/file/d/13A7REk5ajYfuJV2pEJak7nPnjMO7s6Ei/view?usp=sharing" target="_blank" class="btn">Download CV</a>
-                    </div>
-                    <div class="home-img padd-15">
-                        <img src="images/mineimg.jpeg" alt="profile">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Home Section End -->
-        <!-- About Section Start -->
-        <section class="about section  " id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>About Me</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="about-content padd-15">
-                        <div class="row">
-                            <div class="about-text padd-15">
-                                <h3>I'm Shivam Srivastava and <span>Software Developer</span></h3>
-                               
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="personal-info padd-15">
-                                <div class="row">
-                                    <div class="info-item padd-15">
-                                        <p>Birthday: <span>14 Jan 2001</span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p>Age: <span>22</span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p>Github: <span>github.com/srivast0</span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p>Email: <span>shivam311099@gmail.com</span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p>Degree: <span>B.Tech (Computer Science and Engineering)</span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p>Phone: <span>+91 919 881 6190</span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p>City: <span>Delhi</span></p>
-                                    </div>
-                                    
-                                    <!-- <div class="info-item padd-15">
-                                        <p>Freelance: <span>Available</span></p>
-                                    </div> -->
-                                </div>
-                                <div class="row">
-                                    <div class="buttons padd-15">
-                                        
-                                        <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skills padd-15">
-                                <div class="row">
-                                    <div class="skill-item padd-15">
-                                        <h5>Core Java & Advanced Java</h5>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width: 86%"></div>
-                                            <div class="skill-percent">87%</div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="skill-item padd-15">
-                                        <h5>Hibernate</h5>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width: 86%"></div>
-                                            <div class="skill-percent">86%</div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-item padd-15">
-                                        <h5>Spring</h5>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width: 66%"></div>
-                                            <div class="skill-percent">80%</div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-item padd-15">
-                                        <h5>Spring Boot</h5>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width: 66%"></div>
-                                            <div class="skill-percent">70%</div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-item padd-15">
-                                        <h5>Spring REST</h5>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width: 66%"></div>
-                                            <div class="skill-percent">70%</div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-item padd-15">
-                                        <h5>HTML, CSS, & JavaScript</h5>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width: 74%"></div>
-                                            <div class="skill-percent">74%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="experience padd-15">
-                                <h3 class="title">Experience</h3>
-                                <div class="row">
-                                    <div class="timeline-box padd-15">
-                                        <div class="timeline shadow-dark">
-                                            <!-- timline item -->
-                                            <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                <h3 class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 07/2021 - Present
-                                                </h3>
-                                                <h4 class="timeline-title">Java Developer</h4>
-                                                <h4 class="timeline-title">Hari Web Infotech</h4>
-                        
-                                                <p class="timeline-text">API Development & Integration.<br/>
-                                                    Spring REST API Development.<br/>
-                                                    Back-End Development for Web Application.<br/>
-                                                    Front-End Development.<br/>Spring Web MVC Development.<br/>
-                                                    Worked on multiple projects ( Employee Management
-                                                    System, Flight Booking Web Application, Loan Management
-                                                    System)
-                                                    </p>
-                                            </div> 
-                                            <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                <h3 class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 06/2021 - 07/2022
-                                                </h3>
-                                                <h4 class="timeline-title">Java Developer</h4>
-                                                <h4 class="timeline-title">Be Boss Technology <small>(Work from home)</small></h4>
-                        
-                                                <p class="timeline-text">Designing the Application from Scratch.<br/>
-                                                    Work on Payment Gateway Integration<br/>
-                                                    Developing the Back-end along with front-end.<br/>
-                                                    Writing/Generating SQL/HQL Queries.
-                                                    </p>
-                                            </div> 
-                                            <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                <h3 class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 10/2021 - 02/2022
-                                                </h3>
-                                                <h4 class="timeline-title">School Management System and Website</h4>
-                                                <p class="timeline-text">This project is designed to manage & simplify the day-to- day
-                                                    administrative & non-administrative tasks of a school.<br/>
-                                                    Backend (J2EE , Hibernate with JPA, MYSQL
-                                                    Database, Apache Tomcat) and <br/>Frontend(HTML, CSS, JavaScript, jQuery)<br/>
-                                                    </p>
-                                            </div>
-                                            
-                                            <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                <h3 class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 04/2021 - 06/2021
-                                                </h3>
-                                                <h4 class="timeline-title">Worked as Freelancer on UPWORK</h4>
-                                                <p class="timeline-text">Developed complete website of Music Distribution
-                                                    with Backend (J2EE , Hibernate with JPA, MYSQL
-                                                    Database) and <br/>Frontend(HTML, CSS, JavaScript)<br/>
-                                                    Worked on Payment Integration</p>
-                                            </div>
+  </section>
 
-                                            <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                <h3 class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 01/2021 - 02/2021
-                                                </h3>
-                                                <h4 class="timeline-title">Medical Prescription Desktop Application</h4>
-                                                <p class="timeline-text">This is a Desktop Application, which is used to prescribe the medical
-                                                    instruments and medicines with one Admin Panel and Multiple
-                                                    General Users.<br/>
-                                                    Backend (J2EE , JavaFX, Apache Derby 10.14.2) and <br/>Frontend(HTML, CSS, JavaScript)<br/>
-                                                    </p>
-                                            </div>
+  <section>
+    <h2>About Me</h2>
+    <p>Results‑driven Senior Java Backend Developer with 3+ years of experience building and optimizing enterprise‑grade systems. Specialized in cloud‑native architectures, event‑driven microservices, and production‑ready GenAI integrations.</p>
+  </section>
 
-                                            <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                <h3 class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 11/2020 - 01/2020
-                                                </h3>
-                                                <h4 class="timeline-title">Online Learning Management System</h4>
-                                                <p class="timeline-text">This is a platform that allows instructors to build online courses on
-                                                    their preferred topics . Using development tools, they can upload
-                                                    videos, PowerPoint presentations, PDFs, audio, ZIP files and create
-                                                    courses.<br/>
-                                                    Backend (J2EE , Hibernate with JPA, MYSQL
-                                                    Database) and <br/>Frontend(HTML, CSS, JavaScript, AJAX, jQuery)<br/>
-                                                    Worked on Payment Integration</p>
-                                            </div>
-
-
-                                            <!-- time item end -->
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="education padd-15">
-                                <h3 class="title">Education</h3>
-                                <div class="row">
-                                    <div class="timeline-box padd-15">
-                                        <div class="timeline shadow-dark">
-                                            <!-- timline item -->
-                                           
-                                            <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                <h3 class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 2020 - 2023
-                                                </h3>
-                                                <h4 class="timeline-title">Bachelor of Technology (CSE)</h4>
-                                                <p class="timeline-text">Dr. A.P.J. Abdul Kalam Technical University</p>
-                                            </div>
-                                           
-                                            <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                <h3 class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 2016 - 2019
-                                                </h3>
-                                                <h4 class="timeline-title">Diploma in Information Technology</h4>
-                                                <p class="timeline-text">Government Polytechnic SRN Bhadohi</p>
-                                            </div>
-                                            <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                <h3 class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 2016
-                                                </h3>
-                                                <h4 class="timeline-title">High School</h4>
-                                                <p class="timeline-text">Board of High School and Intermediate Education </p>
-                                            </div>
-                                            <!-- time item end -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- About Section Start -->
-         <!-- Service Section Start -->
-         <section class="service section  " id="service">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>Services</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- Service item start -->
-                    <div class="service-item padd-15">
-                        <div class="service-item-inner">
-                            <div class="icon">
-                                <i class="fa fa-mobile-alt"></i>
-                            </div>
-                            <h4>Software Development</h4>
-                        </div>
-                    </div>
-                    <!-- Service item End -->
-                    <!-- Service item start -->
-                    <div class="service-item padd-15">
-                        <div class="service-item-inner">
-                            <div class="icon">
-                                <i class="fa fa-code"></i>
-                            </div>
-                            <h4>Web Application Development</h4>
-                            
-                        </div>
-                    </div>
-                    <!-- Service item End -->
-                    <!-- Service item start -->
-                    <div class="service-item padd-15">
-                        <div class="service-item-inner">
-                            <div class="icon">
-                                <i class="fa fa-code-branch"></i>
-                            </div>
-                            <h4>Enterprise Application Development</h4>
-                        </div>
-                    </div>
-                    <!-- Service item End -->
-                    <!-- Service item start -->
-                    <div class="service-item padd-15">
-                        <div class="service-item-inner">
-                            <div class="icon">
-                                <i class="fa fa-codiepie"></i>
-                            </div>
-                            <h4>Web Designing</h4>
-                            
-                        </div>
-                    </div>
-                    <!-- Service item End -->
-                     
-                </div>
-            </div>
-         </section>
-         <!-- Service Section End -->
-          <!-- Portfolio Section End -->
-          <section class="portfolio section  " id="portfolio">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>Portfolio</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="portfolio-heading padd-15">
-                        <h2>My Recent Projects :</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- Portfolio Item Start -->
-                    <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="images/projectOne.PNG" alt="Project One">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item End -->
-                    <!-- Portfolio Item Start -->
-                    <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="images/projectTwo.JPG" alt="Project One">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item End -->
-                    <!-- Portfolio Item Start -->
-                    <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="images/projectThree.JPG" alt="Project One">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item End -->
-                    
-                </div>
-            </div>
-          </section>
-          <!-- Portfolio Section End -->
-
-          <!-- Contact Section Start -->
-          <section class="contact section" id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>Contact Me</h2>
-                    </div>
-                </div>
-                <h3 class="contact-title padd-15">Have You Any Questions ?</h3>
-                <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
-                <div class="row">
-                    <!-- Contact Info Item Start -->
-                    <div class="contact-info-item padd-15">
-                        <div class="icon"><i class="fa fa-phone"></i></div>
-                        <h4>Call Me On</h4>
-                        <p>+91 919 881 6190</p>
-                    </div>
-                    <!-- Contact Info Item End -->
-                   
-                    <!-- Contact Info Item Start -->
-                    <div class="contact-info-item padd-15">
-                        <div class="icon"><i class="fa fa-envelope"></i></div>
-                        <h4>Email</h4>
-                        <p>shivam311099@gmail.com</p>
-                    </div>
-                    <!-- Contact Info Item End -->
-                    <!-- Contact Info Item Start -->
-                    <div class="contact-info-item padd-15">
-                        <div class="icon"><i class="fa fa-globe-europe"></i></div>
-                        <h4>Website</h4>
-                        <p>srivast0.github.io</p>
-                    </div>
-                    <!-- Contact Info Item End -->
-                </div>
-                <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
-                <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
-                
-            </div>
-          </section>
-          <!-- Contact Section End -->
-
-
-        <!-- Home Section End -->
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div><h3>Backend</h3><ul><li>Java 8–17</li><li>Spring Boot</li><li>REST APIs</li><li>Hibernate (JPA)</li></ul></div>
+      <div><h3>Cloud</h3><ul><li>AWS Lambda</li><li>SQS, S3, EC2</li><li>Event‑driven systems</li></ul></div>
+      <div><h3>Databases</h3><ul><li>MySQL</li><li>NoSQL</li><li>Elasticsearch</li></ul></div>
+      <div><h3>GenAI</h3><ul><li>ChatGPT Integration</li><li>GitHub Copilot</li><li>Agentic AI</li></ul></div>
     </div>
-    <!-- Main Content End -->
+  </section>
+
+  <section>
+  <h2>Experience</h2>
+
+  <div class="experience-item">
+    <h3>Senior Java Developer – Yiron Technologies Pvt. Ltd.</h3>
+    <span>Sep 2025 – Present · Noida, India</span>
+    <ul>
+      <li>Leading backend development for enterprise-grade Java applications with focus on scalability, security, and performance.</li>
+      <li>Implemented Multi-Factor Authentication (MFA) to enhance account security and compliance.</li>
+      <li>Integrated AirArabiaOne APIs for real-time flight availability, pricing, and booking workflows.</li>
+      <li>Optimized flight search APIs for PWA clients, improving response time and reliability.</li>
+      <li>Worked on CyberSource Decision Manager integration for fraud detection and risk analysis.</li>
+    </ul>
+  </div>
+
+  <div class="experience-item" style="margin-top:24px">
+    <h3>Software Engineer (Backend) – Kiwi Technologies (KiwiTech)</h3>
+    <span>Sep 2023 – Sep 2025 · Noida, India</span>
+    <ul>
+      <li>Designed and implemented REST APIs, improving backend performance by up to <strong>50%</strong>.</li>
+      <li>Automated data synchronization pipelines using AWS Lambda, reducing refresh time from 30s to 4.8s.</li>
+      <li>Built scalable, event-driven backend architecture using AWS Lambda and SQS.</li>
+      <li>Implemented geolocation-based real-time search using Elasticsearch.</li>
+      <li>Integrated ChatGPT into the recommendation engine to generate intelligent default order customizations.</li>
+      <li>Recognized with People’s Pick Tech Lead and multiple Employee of the Month awards.</li>
+    </ul>
+  </div>
+
+  <div class="experience-item" style="margin-top:24px">
+    <h3>Java Developer – Hari Web Infotech Pvt. Ltd.</h3>
+    <span>Jul 2022 – Aug 2023 · New Delhi, India</span>
+    <ul>
+      <li>Led end-to-end development of CRM and employee supervision platforms.</li>
+      <li>Built real-time monitoring modules and backend services using Java and Spring.</li>
+      <li>Designed scalable database schemas and reusable service layers.</li>
+      <li>Managed deployments on AWS EC2 and DigitalOcean, including performance tuning.</li>
+      <li>Delivered multiple projects independently from requirements to production.</li>
+    </ul>
+  </div>
+</section>
+
+
+ <section>
+     <h2>Projects</h2>
+     <div class="project">
+<h3>Travelwings – Online Tourism Platform</h3>
+<p><strong>Tech:</strong> Java 8, Spring, MySQL, AWS</p>
+<ul>
+<li>Integrated real-time flight availability and booking APIs.</li>
+<li>Implemented Multi-Factor Authentication (MFA) for enhanced security.</li>
+<li>Optimized flight search APIs for PWA performance and scalability.</li>
+<li>Integrated CyberSource Decision Manager for fraud detection.</li>
+</ul>
+</div>
+<div class="project">
+<h3>OnMyWay™ Commerce Platform</h3>
+<p><strong>Tech:</strong> Java 17, Spring Boot, AWS Lambda, SQS, Elasticsearch</p>
+<ul>
+<li>Built a GenAI-powered recommendation engine for in-car commerce.</li>
+<li>Integrated ChatGPT to generate intelligent default order customizations.</li>
+<li>Designed scalable event-driven pipelines using AWS Lambda and SQS.</li>
+<li>Implemented geolocation-based store discovery with Elasticsearch.</li>
+</ul>
 </div>
 
-<!-- Main Container End -->
-
-<!-- Style Switcher Start -->
-<div class="style-switcher">
-    <div class="style-switcher-toggler s-icon">
-        <i class="fas fa-cog fa-spin"></i>
-    </div>
-    <div class="day-night s-icon">
-        <i class="fas "></i>
-    </div>
-    <h4>Theme Colors</h4>
-    <div class="colors">
-        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
-        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
-        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
-        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
-    </div>
+<div class="project">
+<h3>Event-Driven Data Sync Pipeline</h3>
+<p><strong>Tech:</strong> AWS Lambda, SQS, Java, Elasticsearch</p>
+<ul>
+<li>Built a high-throughput data ingestion and synchronization pipeline.</li>
+<li>Reduced refresh latency from 30 seconds to under 5 seconds.</li>
+<li>Ensured fault tolerance and scalability using queue-based processing.</li>
+</ul>
 </div>
-<!-- Style Switcher End -->
 
-    <!-- ==== JS Files ==== -->
-    
- 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
-    <script src='js/script.js'></script>
-    <script src="js/style-switcher.js"></script>
+
+
+<div class="project">
+<h3>HwiClouds – HRMS & Employee Supervision Platform</h3>
+<p><strong>Tech:</strong> Java, Spring, Spring Data JPA, MySQL, JSP, JavaScript</p>
+<ul>
+<li>Led end-to-end development of an HRMS and employee supervision system.</li>
+<li>Built real-time employee activity monitoring modules.</li>
+<li>Designed scalable backend architecture with optimized database schemas.</li>
+<li>Deployed and maintained the application on AWS EC2.</li>
+</ul>
+</div>
+
+
+<div class="project">
+<h3>Loan Management System</h3>
+<p><strong>Tech:</strong> Java, Spring Framework, JPA, MySQL</p>
+<ul>
+<li>Designed backend services for loan creation, approval, and EMI scheduling.</li>
+<li>Implemented secure, role-based workflows for customers and admins.</li>
+<li>Built reusable service layers and REST endpoints.</li>
+<li>Handled deployments and production support independently.</li>
+</ul>
+</div>
+
+
+
+
+
+</section>
+
+  <section>
+    <h2>GenAI Work</h2>
+    <div class="genai-grid">
+      <div class="genai-card">
+        <h3>Production ChatGPT Integration</h3>
+        <p>Integrated ChatGPT into a live commerce recommendation engine to generate intelligent default order customizations based on user preferences, context, and historical behavior.</p>
+      </div>
+      <div class="genai-card">
+        <h3>AI‑Assisted Backend Development</h3>
+        <p>Leverage GitHub Copilot, ChatGPT, and Gemini to accelerate feature development, improve code quality, and reduce iteration time while maintaining enterprise standards.</p>
+      </div>
+      <div class="genai-card">
+        <h3>Agentic & Workflow Thinking</h3>
+        <p>Experience designing AI‑assisted workflows where LLMs act as reasoning and automation layers within backend systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📧 <a href="mailto:shivam311099@gmail.com">shivam311099@gmail.com</a> · 📍 Noida, India</p>
+  </section>
+
+  <footer>© 2026 Shivam Srivastava · Backend · Cloud · GenAI</footer>
+
 </body>
 </html>
